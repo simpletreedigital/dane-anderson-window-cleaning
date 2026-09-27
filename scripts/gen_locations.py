@@ -196,7 +196,7 @@ for slug in ORDER:
     faqs = c["faqs"] + [("Are you insured to work on my property here?", f"Yes, Dane Anderson Window Cleaning carries insurance covering both residential and commercial work throughout {name} and the rest of the coastal corridor, which matters whenever a crew is on a ladder or using extension poles at your property.")]
     case_title, case_sit, case_app, case_out = c["case"]
 
-    svc_imgs = ["/images/services/ocean-view-windows-home.jpg", "/images/services/clean-house-windows-exterior.jpg", "/images/services/squeegee-closeup-2.jpg", "/images/services/residential-window-cleaning-progress.jpg", "/images/services/window-cleaner-squeegee-closeup.jpg", "/images/services/commercial-window-cleaning-storefront.jpg", "/images/services/hard-water-spots-glass.jpg"]
+    svc_imgs = ["/images/services/ocean-view-windows-home.jpg", "/images/services/clean-house-windows-exterior.jpg", "/images/services/squeegee-closeup-2.jpg", "/images/services/professional-window-cleaning-pole.jpg", "/images/services/window-cleaner-squeegee-closeup.jpg", "/images/services/commercial-window-cleaning-storefront.jpg", "/images/services/hard-water-spots-glass.jpg"]
     svc_img = svc_imgs[ORDER.index(slug) % len(svc_imgs)]
     svc_alt = [f"Streak-free ocean-facing windows after a cleaning visit in {name}, CA", f"Exterior residential window cleaning in progress near {name}", f"Close-up of a squeegee finishing a pane during a {name} service call", f"Purified water-fed pole cleaning an upper-story window in {name}", f"Technician cleaning glass with a squeegee on a coastal home", f"Storefront glass cleaned for a commercial account in {name}", f"Hard water mineral spotting treated on a window near {name}"][ORDER.index(slug) % 7]
 
@@ -262,7 +262,7 @@ for slug in ORDER:
 <div class="wrap" style="max-width:860px"><p style="line-height:1.85">Local homeowners and businesses get the same purified-water process that has made Dane Anderson Window Cleaning a trusted name along <a href="/">the coastal corridor</a>. Explore our full <a href="/services/">list of services</a> or read about <a href="/blog/how-often-clean-windows-coastal-climate/">how often coastal homes should be cleaned</a> on our blog.</p></div>
 </section>
 <section class="cta-banner">
-<div class="wrap"><h2>Ready for Clearer Windows in {name}?</h2><p>Call now for a fast, honest quote.</p><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
+<div class="wrap"><h3>Ready for Clearer Windows in {name}?</h3><p>Call now for a fast, honest quote.</p><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
 </section>
 '''
 
@@ -299,7 +299,7 @@ body = f'''
 <div class="wrap" style="max-width:820px"><p style="line-height:1.85">Not seeing your town listed? We often service addresses between our listed cities as part of our regular route. Call <a href="tel:{PHONE_TEL}">{PHONE_DISPLAY}</a> to confirm coverage, or browse our full <a href="/services/">list of services</a>.</p></div>
 </section>
 <section class="cta-banner">
-<div class="wrap"><h2>Find Your City Above and Call Today</h2><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
+<div class="wrap"><h3>Find Your City Above and Call Today</h3><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
 </section>
 '''
 schema = [LOCAL_BUSINESS_BASE, {"@type": "BreadcrumbList", "itemListElement": breadcrumb_schema([("Home","/"),("Service Areas","/locations/")])}]

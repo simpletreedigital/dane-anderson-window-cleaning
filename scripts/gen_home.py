@@ -39,7 +39,7 @@ body = f'''
     <h2 class="section-title">Coastal Glass Takes a Beating. We Know How to Fix It.</h2>
     <p class="section-sub">Salt spray, marine layer humidity, and hard water sprinklers leave a film on glass that ordinary cleaning does not remove. We use a squeegee-and-purified-water process built specifically for this stretch of coastline, not a generic spray-and-wipe routine.</p>
     <div class="content-grid" style="grid-template-columns:1fr 1.2fr;gap:34px;align-items:center">
-      <img src="/images/services/residential-window-cleaning-progress.jpg" alt="Dane Anderson Window Cleaning technician washing a residential window" style="width:100%;border-radius:var(--radius);box-shadow:var(--shadow)">
+      <img src="/images/services/water-fed-pole-window-cleaning.jpg" alt="Dane Anderson Window Cleaning technician washing a residential window" style="width:100%;border-radius:var(--radius);box-shadow:var(--shadow)">
       <div class="audience-grid">
         <div class="audience-card">
           <h3>&#127968; For Homeowners</h3>
@@ -59,7 +59,7 @@ body = f'''
 <section style="background:var(--white)">
   <div class="wrap">
     <span class="section-label">Our Services</span>
-    <h2 class="section-title">Everything Your Glass and Gutters Need</h2>
+    <h3 class="section-title">Everything Your Glass and Gutters Need</h3>
     <p class="section-sub">Five focused services covering the full exterior maintenance picture for coastal homes and businesses.</p>
     <div class="card-grid">
       <div class="svc-card"><div class="svc-icon">&#129517;</div><h3>Residential Window Cleaning</h3><p>Interior and exterior glass cleaning for homes across the coastal corridor.</p><a href="/services/residential-window-cleaning/" class="card-link">Learn more &rarr;</a></div>
@@ -82,7 +82,7 @@ body = f'''
   <div class="wash-bg"><img src="/images/hero/ocean-wave-aerial.jpg" alt="" role="presentation"><div class="wash-fill"></div></div>
   <div class="wrap wash-inner">
     <span class="section-label">Service Areas</span>
-    <h2 class="section-title">Serving the Santa Cruz to Monterey Coastal Corridor</h2>
+    <h3 class="section-title">Serving the Santa Cruz to Monterey Coastal Corridor</h3>
     <p class="section-sub">We are based in Santa Cruz and drive the coastline daily, from Pleasure Point down through the Monterey Peninsula.</p>
     <div class="card-grid">
       <a href="/locations/santa-cruz/" class="loc-card"><h3>Santa Cruz</h3><p>Home base &amp; primary service area</p></a>
@@ -114,7 +114,7 @@ body = f'''
 <section style="background:var(--white)">
   <div class="wrap" style="max-width:900px">
     <span class="section-label">Local Difference</span>
-    <h2 class="section-title">Why Coastal Window Cleaning Is Different</h2>
+    <h3 class="section-title">Why Coastal Window Cleaning Is Different</h3>
     <div class="img-pair">
       <img src="/images/services/window-cleaner-squeegee-closeup.jpg" alt="Squeegee finishing a pane during a residential visit along the coast">
       <img src="/images/services/ocean-view-windows-home.jpg" alt="Clear ocean-view windows after a Dane Anderson Window Cleaning visit">
@@ -131,7 +131,7 @@ body = f'''
 <section style="background:var(--sand-deep)">
   <div class="wrap">
     <span class="section-label">Reach Us</span>
-    <h2 class="section-title">Ready for Clearer Glass?</h2>
+    <h3 class="section-title">Ready for Clearer Glass?</h3>
     <p class="section-sub">Call now and describe your property. We will give you a straightforward quote over the phone, no in-person estimate required for most residential jobs.</p>
     <div class="hero-ctas">
       <a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call {PHONE_DISPLAY}</a>
@@ -142,7 +142,7 @@ body = f'''
 
 <section class="cta-banner">
   <div class="wrap">
-    <h2>Serving Santa Cruz, Monterey, and Everywhere Between</h2>
+    <h3>Serving Santa Cruz, Monterey, and Everywhere Between</h3>
     <p>Residential and commercial window cleaning, screen repair, hard water removal, and gutter cleaning.</p>
     <a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a>
     <a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a>

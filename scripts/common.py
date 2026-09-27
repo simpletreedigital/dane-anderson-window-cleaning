@@ -1,6 +1,6 @@
 import re, os
 
-DOMAIN = "https://daneandersonwindowcleaning.com"
+DOMAIN = "https://dawindowcleaning.com"
 PHONE_DISPLAY = "(831) 224-3387"
 PHONE_TEL = "8312243387"
 BIZ = "Dane Anderson Window Cleaning"
@@ -39,7 +39,7 @@ def breadcrumb_schema(items, urlbase=DOMAIN):
 def mobile_call_bar():
     return f'''<div class="mobile-call-bar active"><a href="tel:{PHONE_TEL}">&#128222; Call Now: {PHONE_DISPLAY}</a></div>'''
 
-def faq_block(faqs, heading="Frequently Asked Questions", htag="h2"):
+def faq_block(faqs, heading="Frequently Asked Questions", htag="h3"):
     items = []
     for q, a in faqs:
         items.append(f'<div class="faq-item"><button class="faq-q">{q} <span class="faq-icon">+</span></button><div class="faq-a">{a}</div></div>')

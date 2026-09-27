@@ -79,7 +79,7 @@ body = f'''
 <div class="wrap" style="max-width:860px"><p style="line-height:1.85">Gutter cleaning is one of our most requested add-ons for homeowners in <a href="/locations/santa-cruz/">Santa Cruz</a> and <a href="/locations/pacific-grove/">Pacific Grove</a> booking a <a href="/services/residential-window-cleaning/">residential window cleaning</a> visit. Commercial properties can add it to a <a href="/services/commercial-window-cleaning/">commercial window cleaning</a> schedule as well.</p></div>
 </section>
 <section class="cta-banner">
-<div class="wrap"><h2>Don't Wait for the First Storm</h2><p>Call now to schedule gutter cleaning.</p><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
+<div class="wrap"><h3>Don't Wait for the First Storm</h3><p>Call now to schedule gutter cleaning.</p><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
 </section>
 '''
 

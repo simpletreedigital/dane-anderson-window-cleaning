@@ -78,7 +78,7 @@ body = f'''
 <div class="wrap" style="max-width:860px"><p style="line-height:1.85">Homeowners in <a href="/locations/aptos/">Aptos</a> and along the <a href="/locations/santa-cruz/">Santa Cruz</a> bluffs often bundle screen service with a full <a href="/services/residential-window-cleaning/">residential window cleaning</a> visit. Businesses with storefront screen doors can add this to a <a href="/services/commercial-window-cleaning/">commercial window cleaning</a> schedule as well.</p></div>
 </section>
 <section class="cta-banner">
-<div class="wrap"><h2>Restore Airflow and Clarity</h2><p>Call now to get your screens inspected.</p><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
+<div class="wrap"><h3>Restore Airflow and Clarity</h3><p>Call now to get your screens inspected.</p><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
 </section>
 '''
 

@@ -54,7 +54,7 @@ body = f'''
 </div>
 {wash_section_close()}
 <section class="cta-banner">
-<div class="wrap"><h2>Let's Get Your Windows Looking Their Best</h2><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
+<div class="wrap"><h3>Let's Get Your Windows Looking Their Best</h3><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
 </section>
 '''
 

@@ -16,6 +16,8 @@ body = f'''
 </section>
 <section style="background:var(--white)">
 <div class="wrap">
+<span class="section-label">Latest Articles</span>
+<h2 class="section-title">Window Cleaning Tips for the Santa Cruz to Monterey Coast</h2>
 <div class="card-grid">
 <a href="/blog/how-often-clean-windows-coastal-climate/" class="svc-card" style="text-decoration:none">
 <span class="section-label" style="align-self:flex-start">Coastal Climate</span>
@@ -38,7 +40,7 @@ body = f'''
 </div>
 </section>
 <section class="cta-banner">
-<div class="wrap"><h2>Have a Question About Your Windows?</h2><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
+<div class="wrap"><h3>Have a Question About Your Windows?</h3><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
 </section>
 '''
 schema = [LOCAL_BUSINESS_BASE, {"@type": "BreadcrumbList", "itemListElement": breadcrumb_schema([("Home","/"),("Blog","/blog/")])}]

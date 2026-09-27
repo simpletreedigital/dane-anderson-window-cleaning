@@ -18,7 +18,7 @@ faqs = [
 
 body = f'''
 <section class="page-hero">
-  <div class="hero-bg"><img src="/images/services/residential-window-cleaning-progress.jpg" alt="" role="presentation"><div class="hero-scrim" style="background:linear-gradient(105deg,rgba(11,61,92,.93) 50%,rgba(11,61,92,.6) 100%)"></div></div>
+  <div class="hero-bg"><img src="/images/services/professional-window-cleaning-pole.jpg" alt="" role="presentation"><div class="hero-scrim" style="background:linear-gradient(105deg,rgba(11,61,92,.93) 50%,rgba(11,61,92,.6) 100%)"></div></div>
   <div class="wrap hero-content">
     {breadcrumb([("Home","/"),("Services","/services/"),("Residential Window Cleaning",None)])}
     <h1>Residential Window Cleaning in Santa Cruz, CA</h1>
@@ -92,7 +92,7 @@ body = f'''
 <div class="wrap" style="max-width:860px"><p style="line-height:1.85">Dane Anderson Window Cleaning is the residential glass specialist <a href="/locations/santa-cruz/">Santa Cruz</a> homeowners call when the marine layer has taken its toll. We also serve <a href="/locations/aptos/">Aptos</a> and <a href="/locations/capitola/">Capitola</a>, and we pair residential visits with <a href="/services/gutter-cleaning/">gutter cleaning</a> for homeowners who want the full exterior handled in one visit. Businesses can see our separate <a href="/services/commercial-window-cleaning/">commercial window cleaning</a> page.</p></div>
 </section>
 <section class="cta-banner">
-<div class="wrap"><h2>Ready for Streak-Free Windows?</h2><p>Call now for a fast, honest quote.</p><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
+<div class="wrap"><h3>Ready for Streak-Free Windows?</h3><p>Call now for a fast, honest quote.</p><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
 </section>
 '''
 

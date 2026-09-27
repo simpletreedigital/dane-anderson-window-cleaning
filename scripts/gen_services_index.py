@@ -24,7 +24,7 @@ body = f'''
       <div class="svc-card"><div class="svc-icon">&#127970;</div><h3>Commercial Window Cleaning</h3><p>Storefronts, offices, and multi-tenant buildings on a recurring schedule.</p><a href="/services/commercial-window-cleaning/" class="card-link">Learn more &rarr;</a></div>
     </div>
     <span class="section-label">Additional Services</span>
-    <h2 class="section-title" style="font-size:1.6rem">Screen, Glass Care &amp; Gutters</h2>
+    <h3 class="section-title" style="font-size:1.6rem">Screen, Glass Care &amp; Gutters</h3>
     <div class="card-grid">
       <div class="svc-card"><div class="svc-icon">&#128737;</div><h3>Screen Cleaning &amp; Repair</h3><p>Screen washing, re-screening, and frame repair for salt-corroded mesh.</p><a href="/services/screen-cleaning-repair/" class="card-link">Learn more &rarr;</a></div>
       <div class="svc-card"><div class="svc-icon">&#128167;</div><h3>Hard Water Stain Removal</h3><p>Mineral deposit and sprinkler overspray removal that restores true clarity.</p><a href="/services/hard-water-stain-removal/" class="card-link">Learn more &rarr;</a></div>
@@ -39,7 +39,7 @@ body = f'''
 </section>
 <section class="cta-banner">
   <div class="wrap">
-    <h2>Get a Fast Quote Today</h2>
+    <h3>Get a Fast Quote Today</h3>
     <p>Call now, no in-person estimate needed for most residential jobs.</p>
     <a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a>
     <a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a>

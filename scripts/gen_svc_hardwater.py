@@ -82,7 +82,7 @@ body = f'''
 <div class="wrap" style="max-width:860px"><p style="line-height:1.85">Hard water removal pairs naturally with a full <a href="/services/residential-window-cleaning/">residential window cleaning</a> visit for homes in <a href="/locations/aptos/">Aptos</a> and <a href="/locations/watsonville/">Watsonville</a>. Our blog covers this topic in depth in <a href="/blog/salt-air-marine-layer-glass-santa-cruz-monterey/">how salt air and marine layer affect glass along this coast</a>.</p></div>
 </section>
 <section class="cta-banner">
-<div class="wrap"><h2>See Through Your Windows Again</h2><p>Call now for a hard water assessment.</p><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
+<div class="wrap"><h3>See Through Your Windows Again</h3><p>Call now for a hard water assessment.</p><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
 </section>
 '''
 

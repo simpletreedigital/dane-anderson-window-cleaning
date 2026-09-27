@@ -94,7 +94,7 @@ body = f'''
 <div class="wrap" style="max-width:860px"><p style="line-height:1.85">Property managers and business owners across <a href="/locations/monterey/">Monterey</a> and <a href="/locations/carmel-by-the-sea/">Carmel-by-the-Sea</a> trust Dane Anderson Window Cleaning for recurring storefront care. We also offer <a href="/services/gutter-cleaning/">gutter cleaning</a> for commercial buildings and <a href="/services/hard-water-stain-removal/">hard water stain removal</a> for glass closest to the bay. Homeowners can view our separate <a href="/services/residential-window-cleaning/">residential window cleaning</a> page.</p></div>
 </section>
 <section class="cta-banner">
-<div class="wrap"><h2>Keep Your Storefront Looking Sharp</h2><p>Call now to set up a recurring commercial schedule.</p><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
+<div class="wrap"><h3>Keep Your Storefront Looking Sharp</h3><p>Call now to set up a recurring commercial schedule.</p><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
 </section>
 '''
 
