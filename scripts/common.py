@@ -131,6 +131,14 @@ LOCAL_BUSINESS_BASE = {
     "telephone": PHONE_DISPLAY,
     "image": DOMAIN + "/images/hero/homepage-hero-coastal-home.jpg",
     "priceRange": "$$",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "433 Continental St",
+        "addressLocality": "Santa Cruz",
+        "addressRegion": "CA",
+        "postalCode": "95060",
+        "addressCountry": "US"
+    },
     "areaServed": [
         {"@type": "City", "name": "Santa Cruz, CA"},
         {"@type": "City", "name": "Capitola, CA"},
