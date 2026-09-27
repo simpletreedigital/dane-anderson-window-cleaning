@@ -22,8 +22,7 @@ body = f'''
     <a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call {PHONE_DISPLAY}</a>
   </div>
 </section>
-<section style="background:var(--white)">
-<div class="wrap">
+{wash_section_open("/images/hero/ocean-wave-texture.jpg", opacity=0.07, on_white=True)}
 <div class="content-grid">
 <div class="prose">
 <h2>Built for This Coastline, Not Imported From One</h2>
@@ -33,6 +32,15 @@ body = f'''
 <p>Every job starts with an honest assessment of the property rather than a one-size-fits-all quote. A bluff-top home taking direct salt spray gets a different recommendation than a sheltered inland property in the Pajaro Valley, and a storefront with heavy foot traffic gets a different schedule than a quiet office building. We use purified, deionized water-fed systems for exterior and upper-story glass, paired with traditional squeegee work for interior panes, and we treat hard water mineral buildup as its own distinct problem rather than assuming a standard cleaning will fix it.</p>
 <h3>Fully Insured, Locally Accountable</h3>
 <p>The business carries insurance appropriate to both residential and commercial window cleaning work, which matters whenever a crew is on a ladder, using extension poles, or accessing upper-story glass on your property. Being local also means accountability. If something about a visit was not right, there is a real business and a real phone number to call, not a call center routing you to whichever contractor is available that week.</p>
+<div class="team-bio">
+<img src="/images/team/dane-anderson-portrait.jpg" alt="Dane Anderson, owner of Dane Anderson Window Cleaning, at home in Santa Cruz">
+<div>
+<h3 style="margin-top:0">Meet Dane</h3>
+<p>Dane grew up in Monterey, close enough to the water that a foggy morning and a salt-hazed car window were just part of daily life long before he ever cleaned glass for a living. He spent his teenage years surfing the breaks around the peninsula, and that same stretch of coastline is still where he spends most mornings before the workday starts.</p>
+<p>These days Dane lives in Santa Cruz with his dog, and he built this business around the two things he knows best: this coastline and doing a job right. He started Dane Anderson Window Cleaning to give local homeowners and businesses the kind of dependable, face-to-face service that a national franchise cycling through the area can't offer, someone who actually understands why a Pleasure Point bluff-top house needs a different cleaning schedule than a place a few miles inland.</p>
+<p>Outside of work, you'll usually find Dane in the water at first light. That's not just a lifestyle detail, it's part of why he takes coastal glass care seriously. He sees firsthand, nearly every day, exactly what salt spray and marine layer moisture do to everything they touch along this coast, windows included.</p>
+</div>
+</div>
 <h3>Serving the Full Coastal Corridor</h3>
 <p>We serve <a href="/locations/santa-cruz/">Santa Cruz</a>, <a href="/locations/capitola/">Capitola</a>, <a href="/locations/aptos/">Aptos</a>, <a href="/locations/watsonville/">Watsonville</a>, <a href="/locations/monterey/">Monterey</a>, <a href="/locations/pacific-grove/">Pacific Grove</a>, and <a href="/locations/carmel-by-the-sea/">Carmel-by-the-Sea</a>, covering the full stretch of coastline from the Santa Cruz Mountains foothills down to the Monterey Peninsula. Our full range of services includes <a href="/services/residential-window-cleaning/">residential window cleaning</a>, <a href="/services/commercial-window-cleaning/">commercial window cleaning</a>, <a href="/services/screen-cleaning-repair/">screen cleaning and repair</a>, <a href="/services/hard-water-stain-removal/">hard water stain removal</a>, and <a href="/services/gutter-cleaning/">gutter cleaning</a>.</p>
 <p>For more on why this stretch of coast demands a different approach to glass care, see our blog articles on <a href="/blog/how-often-clean-windows-coastal-climate/">how often to clean windows in a coastal climate</a> and <a href="/blog/salt-air-marine-layer-glass-santa-cruz-monterey/">how salt air and marine layer affect glass here specifically</a>. According to the <a href="https://www.weather.gov/mtr/" target="_blank" rel="noopener">National Weather Service Monterey office</a>, marine layer conditions are a near-daily feature of this coastline for much of the year, which is part of why local expertise matters more here than it might in a drier inland climate. The <a href="https://www.epa.gov/watersense/hard-water" target="_blank" rel="noopener">EPA's WaterSense program</a> and the <a href="https://www.montereychamber.com" target="_blank" rel="noopener">Monterey Peninsula Chamber of Commerce</a> are both useful resources for property owners along this corridor who want to understand water quality and local business conditions in more depth.</p>
@@ -41,10 +49,10 @@ body = f'''
 <div class="sidebar">
 <div class="cta-card"><h3>Get a Fast Quote</h3><p>Call now to describe your property.</p><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; {PHONE_DISPLAY}</a></div>
 <div class="sidebar-card"><h3>Explore</h3><ul><li><a href="/services/">All Services</a></li><li><a href="/locations/">Service Areas</a></li><li><a href="/blog/">Blog</a></li></ul></div>
+<img src="/images/team/dane-anderson-surfboards.jpg" alt="Dane Anderson with his surfboards at home in Santa Cruz" style="width:100%;border-radius:var(--radius);box-shadow:var(--shadow)">
 </div>
 </div>
-</div>
-</section>
+{wash_section_close()}
 <section class="cta-banner">
 <div class="wrap"><h2>Let's Get Your Windows Looking Their Best</h2><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
 </section>

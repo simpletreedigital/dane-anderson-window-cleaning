@@ -24,13 +24,13 @@ body = f'''
     <a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call {PHONE_DISPLAY}</a>
   </div>
 </section>
-<section style="background:var(--white)">
-<div class="wrap">
+{wash_section_open("/images/hero/ocean-wave-texture.jpg", opacity=0.07, on_white=True)}
 <div class="content-grid">
 <div class="prose">
 <h2>Why Hard Water Stains Form on Coastal Glass</h2>
 <p>Every time a sprinkler head sprays water onto a window and that water evaporates, it leaves behind the calcium, magnesium, and other minerals that were dissolved in it. A single overspray event is invisible. Repeated over months and years, the mineral deposits build into a white or cloudy film that regular glass cleaner will not remove because the minerals are bonded to the surface, not simply sitting on top of it as dust would.</p>
 <p>Coastal properties around Monterey Bay see this problem more than most, for two compounding reasons. California's water supply already carries a moderate to high mineral content depending on the source, and salt air adds its own residue layer that interacts with the mineral film to make it more stubborn than either factor would be alone. Ground-floor windows near landscaped lawns with automatic sprinklers are the most common victims, since they take direct overspray on a near-daily basis during irrigation season.</p>
+{body_image("/images/services/ocean-view-windows-home.jpg", "Clear ocean-view glass after hard water mineral removal")}
 <h3>What Hard Water Stains Cost You If Left Untreated</h3>
 <p>Left alone long enough, surface mineral deposits can begin to etch into the glass itself. Etched glass has a permanently altered surface texture that scatters light differently than clear glass, and at that stage no amount of cleaning fully restores the original clarity, only a specialized glass restoration or, in severe cases, replacement will. Treating hard water buildup while it is still a surface deposit rather than a surface etch is the difference between a straightforward cleaning service and a much larger expense down the road.</p>
 <div class="table-wrap">
@@ -77,8 +77,7 @@ body = f'''
 <div class="sidebar-card"><h3>Service Areas</h3><ul><li><a href="/locations/aptos/">Aptos</a></li><li><a href="/locations/watsonville/">Watsonville</a></li><li><a href="/locations/">All Areas &rarr;</a></li></ul></div>
 </div>
 </div>
-</div>
-</section>
+{wash_section_close()}
 <section style="background:var(--sand-deep)">
 <div class="wrap" style="max-width:860px"><p style="line-height:1.85">Hard water removal pairs naturally with a full <a href="/services/residential-window-cleaning/">residential window cleaning</a> visit for homes in <a href="/locations/aptos/">Aptos</a> and <a href="/locations/watsonville/">Watsonville</a>. Our blog covers this topic in depth in <a href="/blog/salt-air-marine-layer-glass-santa-cruz-monterey/">how salt air and marine layer affect glass along this coast</a>.</p></div>
 </section>

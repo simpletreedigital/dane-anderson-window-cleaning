@@ -25,13 +25,13 @@ body = f'''
     <a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call {PHONE_DISPLAY}</a>
   </div>
 </section>
-<section style="background:var(--white)">
-<div class="wrap">
+{wash_section_open("/images/hero/ocean-wave-texture.jpg", opacity=0.07, on_white=True)}
 <div class="content-grid">
 <div class="prose">
 <h2>Commercial Glass Maintenance Built for Coastal Storefronts</h2>
 <p>First impressions matter more for a business than a home, and nothing undercuts a storefront's presentation like salt-hazed glass or fingerprint smudges on the entry door. Dane Anderson Window Cleaning works with retail shops, restaurants, offices, and property management companies across the coastal corridor to keep commercial glass looking sharp on a schedule that fits the business, not the other way around.</p>
 <p>Unlike a residential visit, commercial work is almost always about consistency over time rather than a single deep clean. A restaurant on a village shopping street needs its front windows spotless every week regardless of weather, while a professional office building might only need a biweekly or monthly visit to interior lobby glass and exterior windows. We build the schedule around your foot traffic and business hours, not a one-size-fits-all route.</p>
+{body_image("/images/services/commercial-window-cleaning-storefront.jpg", "Storefront glass cleaned for a commercial account along the coastal corridor")}
 <h3>Why Storefront Glass Needs More Frequent Attention Near the Coast</h3>
 <p>Retail corridors close to the water, including the shopping streets of downtown Monterey and the village core of Carmel-by-the-Sea, take on salt spray and dust at a faster rate than an office park set back from the shoreline. Add in fingerprints, delivery truck exhaust residue, and normal foot traffic grime, and a storefront can look tired again within days of a cleaning. A recurring schedule prevents that buildup from ever becoming visible to customers walking by.</p>
 <h3>What Commercial Window Cleaning Costs</h3>
@@ -89,8 +89,7 @@ body = f'''
 <div class="sidebar-card"><h3>Service Areas</h3><ul><li><a href="/locations/monterey/">Monterey</a></li><li><a href="/locations/carmel-by-the-sea/">Carmel-by-the-Sea</a></li><li><a href="/locations/santa-cruz/">Santa Cruz</a></li><li><a href="/locations/">All Areas &rarr;</a></li></ul></div>
 </div>
 </div>
-</div>
-</section>
+{wash_section_close()}
 <section style="background:var(--sand-deep)">
 <div class="wrap" style="max-width:860px"><p style="line-height:1.85">Property managers and business owners across <a href="/locations/monterey/">Monterey</a> and <a href="/locations/carmel-by-the-sea/">Carmel-by-the-Sea</a> trust Dane Anderson Window Cleaning for recurring storefront care. We also offer <a href="/services/gutter-cleaning/">gutter cleaning</a> for commercial buildings and <a href="/services/hard-water-stain-removal/">hard water stain removal</a> for glass closest to the bay. Homeowners can view our separate <a href="/services/residential-window-cleaning/">residential window cleaning</a> page.</p></div>
 </section>

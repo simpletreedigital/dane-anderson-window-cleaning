@@ -24,13 +24,13 @@ body = f'''
     <a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call {PHONE_DISPLAY}</a>
   </div>
 </section>
-<section style="background:var(--white)">
-<div class="wrap">
+{wash_section_open("/images/hero/ocean-wave-texture.jpg", opacity=0.07, on_white=True)}
 <div class="content-grid">
 <div class="prose">
 <h2>Why Coastal Screens Need More Attention</h2>
 <p>Window screens do double duty along Monterey Bay. They keep out the same insects that any inland home deals with, but they also act as a filter that catches windblown salt, sand, and dust before it settles inside the house. Over time that filtering role takes a toll on the mesh and frame that homeowners further from the coast simply do not experience at the same rate.</p>
 <p>Aluminum screen frames corrode faster in salt air, especially at the corners where two pieces of frame meet and moisture tends to collect. Fiberglass mesh can become brittle when repeated salt exposure combines with UV exposure from the coastal sun, leading to small tears that widen over a season. A screen that looked fine last year can be genuinely fragile by the time the next one rolls around, which is why we inspect screens as part of every residential window cleaning visit rather than waiting for a homeowner to notice a problem.</p>
+{body_image("/images/services/window-screen-repair.jpg", "A repaired window screen ready for reinstallation")}
 <h3>Cleaning Versus Repair</h3>
 <p>Screen cleaning removes the dust, salt residue, and pollen that reduces airflow and leaves a hazy look when you view the yard or ocean through the mesh. It is a straightforward process using a soft brush and rinse that will not stretch or tear healthy mesh. Repair becomes necessary once the mesh itself has torn, sagged, or pulled away from the frame track, or once the frame has visibly corroded or bent. We assess each screen individually rather than assuming every screen on a property needs the same treatment.</p>
 <h3>What Screen Cleaning &amp; Repair Costs</h3>
@@ -73,8 +73,7 @@ body = f'''
 <div class="sidebar-card"><h3>Service Areas</h3><ul><li><a href="/locations/santa-cruz/">Santa Cruz</a></li><li><a href="/locations/capitola/">Capitola</a></li><li><a href="/locations/">All Areas &rarr;</a></li></ul></div>
 </div>
 </div>
-</div>
-</section>
+{wash_section_close()}
 <section style="background:var(--sand-deep)">
 <div class="wrap" style="max-width:860px"><p style="line-height:1.85">Homeowners in <a href="/locations/aptos/">Aptos</a> and along the <a href="/locations/santa-cruz/">Santa Cruz</a> bluffs often bundle screen service with a full <a href="/services/residential-window-cleaning/">residential window cleaning</a> visit. Businesses with storefront screen doors can add this to a <a href="/services/commercial-window-cleaning/">commercial window cleaning</a> schedule as well.</p></div>
 </section>

@@ -196,6 +196,10 @@ for slug in ORDER:
     faqs = c["faqs"] + [("Are you insured to work on my property here?", f"Yes, Dane Anderson Window Cleaning carries insurance covering both residential and commercial work throughout {name} and the rest of the coastal corridor, which matters whenever a crew is on a ladder or using extension poles at your property.")]
     case_title, case_sit, case_app, case_out = c["case"]
 
+    svc_imgs = ["/images/services/ocean-view-windows-home.jpg", "/images/services/clean-house-windows-exterior.jpg", "/images/services/squeegee-closeup-2.jpg", "/images/services/residential-window-cleaning-progress.jpg", "/images/services/window-cleaner-squeegee-closeup.jpg", "/images/services/commercial-window-cleaning-storefront.jpg", "/images/services/hard-water-spots-glass.jpg"]
+    svc_img = svc_imgs[ORDER.index(slug) % len(svc_imgs)]
+    svc_alt = [f"Streak-free ocean-facing windows after a cleaning visit in {name}, CA", f"Exterior residential window cleaning in progress near {name}", f"Close-up of a squeegee finishing a pane during a {name} service call", f"Purified water-fed pole cleaning an upper-story window in {name}", f"Technician cleaning glass with a squeegee on a coastal home", f"Storefront glass cleaned for a commercial account in {name}", f"Hard water mineral spotting treated on a window near {name}"][ORDER.index(slug) % 7]
+
     body = f'''
 <section class="page-hero">
   <div class="hero-bg"><img src="{c['hero_img']}" alt="" role="presentation"><div class="hero-scrim" style="background:linear-gradient(105deg,rgba(11,61,92,.93) 50%,rgba(11,61,92,.6) 100%)"></div></div>
@@ -206,8 +210,7 @@ for slug in ORDER:
     <a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call {PHONE_DISPLAY}</a>
   </div>
 </section>
-<section style="background:var(--white)">
-<div class="wrap">
+{wash_section_open("/images/hero/ocean-wave-texture.jpg", opacity=0.07, on_white=True)}
 <div class="content-grid">
 <div class="prose">
 <h2>Local Window Cleaning for {name}</h2>
@@ -229,6 +232,7 @@ for slug in ORDER:
 <a href="/services/hard-water-stain-removal/" style="display:flex;align-items:center;gap:8px;padding:12px;background:var(--sand-deep);border-radius:8px;font-weight:600;font-size:.9rem;color:var(--navy)">&#128167; Hard Water Stain Removal</a>
 <a href="/services/gutter-cleaning/" style="display:flex;align-items:center;gap:8px;padding:12px;background:var(--sand-deep);border-radius:8px;font-weight:600;font-size:.9rem;color:var(--navy)">&#127960; Gutter Cleaning</a>
 </div>
+{body_image(svc_img, svc_alt, f"Recent work from our {name} route")}
 {case_study(case_title, case_sit, case_app, case_out)}
 <h3>What a Visit Looks Like</h3>
 <div class="steps-list">
@@ -253,8 +257,7 @@ for slug in ORDER:
 <div class="sidebar-card"><h3>All Services</h3><ul><li><a href="/services/residential-window-cleaning/">Residential</a></li><li><a href="/services/commercial-window-cleaning/">Commercial</a></li><li><a href="/services/">View All &rarr;</a></li></ul></div>
 </div>
 </div>
-</div>
-</section>
+{wash_section_close()}
 <section style="background:var(--sand-deep)">
 <div class="wrap" style="max-width:860px"><p style="line-height:1.85">Local homeowners and businesses get the same purified-water process that has made Dane Anderson Window Cleaning a trusted name along <a href="/">the coastal corridor</a>. Explore our full <a href="/services/">list of services</a> or read about <a href="/blog/how-often-clean-windows-coastal-climate/">how often coastal homes should be cleaned</a> on our blog.</p></div>
 </section>

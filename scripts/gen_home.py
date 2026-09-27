@@ -18,8 +18,8 @@ body = f'''
 <section class="page-hero">
   <div class="hero-bg"><img src="/images/hero/homepage-hero-coastal-home.jpg" alt="" role="presentation"><div class="hero-scrim" style="background:linear-gradient(105deg,rgba(11,61,92,.93) 45%,rgba(11,61,92,.55) 100%)"></div></div>
   <div class="wrap hero-content">
-    <h1>Crystal-Clear Views for Coastal California Homes and Businesses</h1>
-    <p class="lede">Dane Anderson Window Cleaning provides professional residential and commercial window cleaning from Santa Cruz to Monterey. Fully insured, locally owned, and built for the salt air and hard water spotting that coastal glass takes on here.</p>
+    <h1>Window Cleaning Santa Cruz to Monterey, CA</h1>
+    <p class="lede">Crystal-clear views for coastal California homes and businesses. Dane Anderson Window Cleaning provides professional residential and commercial window cleaning from Santa Cruz to Monterey. Fully insured, locally owned, and built for the salt air and hard water spotting that coastal glass takes on here.</p>
     <div class="hero-ctas">
       <a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call {PHONE_DISPLAY}</a>
       <a href="/services/" class="btn btn-ghost">View Our Services</a>
@@ -97,6 +97,10 @@ body = f'''
   <div class="wrap" style="max-width:900px">
     <span class="section-label">Local Difference</span>
     <h2 class="section-title">Why Coastal Window Cleaning Is Different</h2>
+    <div class="img-pair">
+      <img src="/images/services/window-cleaner-squeegee-closeup.jpg" alt="Squeegee finishing a pane during a residential visit along the coast">
+      <img src="/images/services/ocean-view-windows-home.jpg" alt="Clear ocean-view windows after a Dane Anderson Window Cleaning visit">
+    </div>
     <div class="prose">
       <p>Homes and storefronts along Monterey Bay deal with a specific combination of conditions that inland California properties simply do not face. Salt-laden fog rolls in most mornings, sprinkler overspray mixes with the local hard water supply, and the marine layer keeps glass surfaces damp longer than they would stay in a drier climate. Left alone, that combination bakes a mineral film into the glass that becomes progressively harder to remove.</p>
       <p>Dane Anderson Window Cleaning built its process around this reality rather than importing a generic residential cleaning routine. Every job includes a check for hard water etching, not just surface dust and pollen, and our crews carry the deionized water systems and mineral-safe solutions that the standard vinegar-and-newspaper approach cannot match. <a href="/services/hard-water-stain-removal/">Hard water stain removal</a> is one of our most requested add-ons for exactly this reason.</p>
@@ -135,5 +139,14 @@ schema = [
 
 extra_head = f'<script type="application/ld+json">{json.dumps(faq_schema(faqs), separators=(",",":"))}</script>'
 
-html = page_shell(title, desc, "/", [LOCAL_BUSINESS_BASE], body + faq_block(faqs), extra_head=extra_head)
+faq_section = f'''
+<section style="background:var(--white)">
+  <div class="wrap" style="max-width:820px">
+    <span class="section-label">Common Questions</span>
+    {faq_block(faqs, heading="Window Cleaning FAQs", htag="h3")}
+  </div>
+</section>
+'''
+
+html = page_shell(title, desc, "/", [LOCAL_BUSINESS_BASE], body + faq_section, extra_head=extra_head)
 write_page("index.html", html)

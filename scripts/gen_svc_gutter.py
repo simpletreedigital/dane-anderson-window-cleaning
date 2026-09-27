@@ -24,13 +24,13 @@ body = f'''
     <a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call {PHONE_DISPLAY}</a>
   </div>
 </section>
-<section style="background:var(--white)">
-<div class="wrap">
+{wash_section_open("/images/hero/ocean-wave-texture.jpg", opacity=0.07, on_white=True)}
 <div class="content-grid">
 <div class="prose">
 <h2>Why Coastal Gutters Clog Faster</h2>
 <p>Homes throughout the Santa Cruz Mountains foothills and the wooded neighborhoods around Aptos and Pacific Grove sit under a mix of redwood, eucalyptus, pine, and oak trees that shed year-round rather than in one tidy autumn drop. Redwood needles in particular are small enough to pack tightly into a gutter channel and downspout opening, creating clogs that are easy to miss during a quick visual check from the ground.</p>
 <p>Add in the wind-driven storms that roll off the Pacific each winter, and a gutter system that was clear in September can be completely blocked by December. Overflowing gutters during a heavy storm do not just make a mess. Water that spills over the gutter edge runs directly down exterior siding and can pool at the foundation, and over enough storm seasons that recurring water exposure leads to real, expensive damage.</p>
+{body_image("/images/services/squeegee-closeup-2.jpg", "Close-up of exterior cleaning equipment used on a gutter and window visit")}
 <h3>What We Do During a Gutter Cleaning Visit</h3>
 <p>We clear all debris from the gutter channel by hand rather than simply blowing it out with a leaf blower, since hand clearing catches compacted debris and small clogs near seams that a blower often pushes past rather than removing. Once the channel is clear, we flush each downspout with water to confirm it drains freely all the way to ground level or the storm drain connection, since a clogged downspout can back water up into a gutter that otherwise looks clean.</p>
 <h3>What Gutter Cleaning Costs</h3>
@@ -74,8 +74,7 @@ body = f'''
 <div class="sidebar-card"><h3>Service Areas</h3><ul><li><a href="/locations/santa-cruz/">Santa Cruz</a></li><li><a href="/locations/aptos/">Aptos</a></li><li><a href="/locations/">All Areas &rarr;</a></li></ul></div>
 </div>
 </div>
-</div>
-</section>
+{wash_section_close()}
 <section style="background:var(--sand-deep)">
 <div class="wrap" style="max-width:860px"><p style="line-height:1.85">Gutter cleaning is one of our most requested add-ons for homeowners in <a href="/locations/santa-cruz/">Santa Cruz</a> and <a href="/locations/pacific-grove/">Pacific Grove</a> booking a <a href="/services/residential-window-cleaning/">residential window cleaning</a> visit. Commercial properties can add it to a <a href="/services/commercial-window-cleaning/">commercial window cleaning</a> schedule as well.</p></div>
 </section>

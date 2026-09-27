@@ -26,8 +26,7 @@ body = f'''
     <a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call {PHONE_DISPLAY}</a>
   </div>
 </section>
-<section style="background:var(--white)">
-<div class="wrap">
+{wash_section_open("/images/hero/ocean-wave-texture.jpg", opacity=0.07, on_white=True)}
 <div class="content-grid">
 <div class="prose">
 <h2>What Residential Window Cleaning Actually Includes</h2>
@@ -56,6 +55,7 @@ body = f'''
 <li><strong>Cobweb and frame cleanup:</strong> corners and frames cleared of webs and insect debris that build up faster near the water.</li>
 <li><strong>Hard water spot check:</strong> a visual assessment for mineral etching, with a referral to our dedicated hard water removal service when needed.</li>
 </ul>
+{body_image("/images/services/clean-house-windows-exterior.jpg", "A Santa Cruz area home after a full residential window cleaning visit")}
 <h3>Local Conditions That Shape Our Process</h3>
 <p>Properties along West Cliff Drive and the bluffs above Pleasure Point take the heaviest direct salt spray on this part of the coast, and homeowners there often notice glass haze returning within a few weeks of a standard cleaning during winter storm season. Further south, homes set back in neighborhoods like Seabright or the Pogonip-adjacent hillsides see less direct spray but more marine layer condensation overnight, which still leaves mineral spotting once it evaporates off the glass each morning. We adjust the recommended cleaning frequency for each property based on its actual exposure rather than applying one blanket schedule to every address on our route.</p>
 {case_study(
@@ -87,8 +87,7 @@ body = f'''
 <div class="sidebar-card"><h3>Service Areas</h3><ul><li><a href="/locations/santa-cruz/">Santa Cruz</a></li><li><a href="/locations/capitola/">Capitola</a></li><li><a href="/locations/aptos/">Aptos</a></li><li><a href="/locations/">All Areas &rarr;</a></li></ul></div>
 </div>
 </div>
-</div>
-</section>
+{wash_section_close()}
 <section style="background:var(--sand-deep)">
 <div class="wrap" style="max-width:860px"><p style="line-height:1.85">Dane Anderson Window Cleaning is the residential glass specialist <a href="/locations/santa-cruz/">Santa Cruz</a> homeowners call when the marine layer has taken its toll. We also serve <a href="/locations/aptos/">Aptos</a> and <a href="/locations/capitola/">Capitola</a>, and we pair residential visits with <a href="/services/gutter-cleaning/">gutter cleaning</a> for homeowners who want the full exterior handled in one visit. Businesses can see our separate <a href="/services/commercial-window-cleaning/">commercial window cleaning</a> page.</p></div>
 </section>

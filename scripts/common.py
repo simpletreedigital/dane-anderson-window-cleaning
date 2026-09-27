@@ -57,6 +57,25 @@ def faq_schema(faqs):
 def strip_tags(s):
     return re.sub('<[^<]+?>', '', s)
 
+def wash_section_open(image, opacity=0.08, on_white=False, extra_style=""):
+    cls = "wash-section on-white" if on_white else "wash-section"
+    return f'''<section class="{cls}" style="{extra_style}">
+<div class="wash-bg"><img src="{image}" alt="" role="presentation" style="opacity:{opacity}"><div class="wash-fill"></div></div>
+<div class="wash-inner">
+<div class="wrap">'''
+
+def wash_section_close():
+    return '''</div>
+</div>
+</section>'''
+
+def body_image(src, alt, caption=None, style=""):
+    cap = f'<p class="body-img-caption">{caption}</p>' if caption else ""
+    return f'''<figure style="margin:26px 0">
+<img src="{src}" alt="{alt}" class="body-img" style="{style}">
+{cap}
+</figure>'''
+
 def case_study(title, situation, approach, outcome):
     return f'''<div class="case-study">
 <span class="cs-label">Client Case Study</span>
