@@ -16,7 +16,7 @@ faqs = [
 
 body = f'''
 <section class="page-hero">
-  <div class="hero-bg"><img src="/images/hero/homepage-hero-coastal-home.jpg" alt="" role="presentation"><div class="hero-scrim" style="background:linear-gradient(105deg,rgba(11,61,92,.93) 45%,rgba(11,61,92,.55) 100%)"></div></div>
+  <div class="hero-bg"><img src="/images/services/window-cleaner-squeegee-closeup.jpg" alt="" role="presentation"><div class="hero-scrim" style="background:linear-gradient(105deg,rgba(11,61,92,.93) 45%,rgba(11,61,92,.55) 100%)"></div></div>
   <div class="wrap hero-content">
     <h1>Window Cleaning Santa Cruz to Monterey, CA</h1>
     <p class="lede">Crystal-clear views for coastal California homes and businesses. Dane Anderson Window Cleaning provides professional residential and commercial window cleaning from Santa Cruz to Monterey. Fully insured, locally owned, and built for the salt air and hard water spotting that coastal glass takes on here.</p>
@@ -38,16 +38,19 @@ body = f'''
     <span class="section-label">Why Homeowners Call Us</span>
     <h2 class="section-title">Coastal Glass Takes a Beating. We Know How to Fix It.</h2>
     <p class="section-sub">Salt spray, marine layer humidity, and hard water sprinklers leave a film on glass that ordinary cleaning does not remove. We use a squeegee-and-purified-water process built specifically for this stretch of coastline, not a generic spray-and-wipe routine.</p>
-    <div class="content-grid" style="grid-template-columns:1fr 1fr;gap:30px">
-      <div>
-        <h3 style="margin-bottom:8px">For Homeowners</h3>
-        <p style="color:var(--muted);font-size:.95rem">Interior and exterior glass, tracks, sills, and screens for single-story homes up through multi-story bluff-top properties.</p>
-        <a href="/services/residential-window-cleaning/" class="card-link">Learn more &rarr;</a>
-      </div>
-      <div>
-        <h3 style="margin-bottom:8px">For Businesses</h3>
-        <p style="color:var(--muted);font-size:.95rem">Storefronts, offices, and multi-tenant buildings on recurring schedules that keep glass presentable year-round.</p>
-        <a href="/services/commercial-window-cleaning/" class="card-link">Learn more &rarr;</a>
+    <div class="content-grid" style="grid-template-columns:1fr 1.2fr;gap:34px;align-items:center">
+      <img src="/images/services/residential-window-cleaning-progress.jpg" alt="Dane Anderson Window Cleaning technician washing a residential window" style="width:100%;border-radius:var(--radius);box-shadow:var(--shadow)">
+      <div class="audience-grid">
+        <div class="audience-card">
+          <h3>&#127968; For Homeowners</h3>
+          <p style="color:var(--muted);font-size:.95rem;margin-bottom:10px">Interior and exterior glass, tracks, sills, and screens for single-story homes up through multi-story bluff-top properties.</p>
+          <a href="/services/residential-window-cleaning/" class="card-link">Learn more &rarr;</a>
+        </div>
+        <div class="audience-card">
+          <h3>&#127970; For Businesses</h3>
+          <p style="color:var(--muted);font-size:.95rem;margin-bottom:10px">Storefronts, offices, and multi-tenant buildings on recurring schedules that keep glass presentable year-round.</p>
+          <a href="/services/commercial-window-cleaning/" class="card-link">Learn more &rarr;</a>
+        </div>
       </div>
     </div>
   </div>
@@ -89,6 +92,21 @@ body = f'''
       <a href="/locations/monterey/" class="loc-card"><h3>Monterey</h3><p>Cannery Row &amp; downtown</p></a>
       <a href="/locations/pacific-grove/" class="loc-card"><h3>Pacific Grove</h3><p>Lovers Point &amp; Asilomar</p></a>
       <a href="/locations/carmel-by-the-sea/" class="loc-card"><h3>Carmel-by-the-Sea</h3><p>Village &amp; carmel beach</p></a>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--white)">
+  <div class="wrap">
+    <div class="team-bio team-bio-3col">
+      <img src="/images/team/dane-anderson-portrait.jpg" alt="Dane Anderson, owner of Dane Anderson Window Cleaning">
+      <div>
+        <span class="section-label">Meet the Owner</span>
+        <h3 style="margin-top:0">Local, Hands-On, and Actually Named Dane</h3>
+        <p style="color:var(--muted)">Dane grew up in Monterey and now lives in Santa Cruz, and he's still on the water most mornings before the workday starts. He built this business around knowing this coastline, not a franchise playbook imported from somewhere drier.</p>
+        <a href="/about/" class="card-link">Read Dane's story &rarr;</a>
+      </div>
+      <img src="/images/team/dane-anderson-surfboards.jpg" alt="Dane Anderson with his surfboards at home in Santa Cruz">
     </div>
   </div>
 </section>

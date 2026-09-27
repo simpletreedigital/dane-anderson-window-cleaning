@@ -217,6 +217,7 @@ for slug in ORDER:
 <p>{c['context']}</p>
 <p>We regularly service homes and businesses in {c['neighborhoods']}, and our crews know which properties along {c['corridors']} tend to need more frequent attention based on their sun and wind exposure. That local knowledge shapes the cleaning frequency and treatment approach we recommend, rather than applying one blanket schedule to every address.</p>
 <p>Whether you are a homeowner noticing a hazy film on the living room glass or a property manager overseeing several commercial units, the same purified-water process applies, adjusted for the specific exposure and window style at your address. We keep detailed notes on returning accounts so each visit builds on what we learned about the property the time before, rather than starting from scratch every visit.</p>
+{body_image(svc_img, svc_alt, f"Recent work from our {name} route")}
 <div style="background:var(--sand-deep);border-radius:10px;padding:16px 20px;margin:20px 0;border-left:3px solid var(--sky)">
 <p style="font-size:.88rem;color:var(--muted);margin:0"><strong style="color:var(--dark)">Local resources:</strong> <a href="{gov_url}" target="_blank" rel="noopener">{gov_name}</a> &bull; <a href="{cham_url}" target="_blank" rel="noopener">{cham_name}</a> &bull; <a href="{civic_url}" target="_blank" rel="noopener">{civic_name}</a></p>
 </div>
@@ -232,7 +233,6 @@ for slug in ORDER:
 <a href="/services/hard-water-stain-removal/" style="display:flex;align-items:center;gap:8px;padding:12px;background:var(--sand-deep);border-radius:8px;font-weight:600;font-size:.9rem;color:var(--navy)">&#128167; Hard Water Stain Removal</a>
 <a href="/services/gutter-cleaning/" style="display:flex;align-items:center;gap:8px;padding:12px;background:var(--sand-deep);border-radius:8px;font-weight:600;font-size:.9rem;color:var(--navy)">&#127960; Gutter Cleaning</a>
 </div>
-{body_image(svc_img, svc_alt, f"Recent work from our {name} route")}
 {case_study(case_title, case_sit, case_app, case_out)}
 <h3>What a Visit Looks Like</h3>
 <div class="steps-list">

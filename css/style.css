@@ -139,9 +139,15 @@ nav.desktop a:hover,nav.desktop a[aria-current="page"]{color:var(--sky)}
 .img-pair{display:grid;grid-template-columns:1fr;gap:16px;margin:26px 0}
 @media(min-width:640px){.img-pair{grid-template-columns:1fr 1fr}}
 .img-pair img{width:100%;height:240px;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}
+.audience-grid{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:760px){.audience-grid{grid-template-columns:1fr 1fr}}
+.audience-card{background:var(--white);border:2px solid var(--sky);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow)}
+.audience-card h3{color:var(--navy);margin-bottom:8px;display:flex;align-items:center;gap:8px}
 .team-bio{display:grid;grid-template-columns:1fr;gap:22px;background:var(--sand-deep);border-radius:var(--radius);padding:26px;margin:30px 0}
 .team-bio img{width:160px;height:196px;object-fit:cover;border-radius:var(--radius-sm);box-shadow:var(--shadow);margin:0 auto}
 @media(min-width:640px){.team-bio{grid-template-columns:190px 1fr;align-items:start}.team-bio img{margin:0}}
+.team-bio.team-bio-3col img{width:100%;height:220px}
+@media(min-width:760px){.team-bio.team-bio-3col{grid-template-columns:170px 1fr 170px;align-items:center}.team-bio.team-bio-3col img{height:200px}}
 
 /* case study */
 .case-study{background:linear-gradient(150deg,var(--dark),var(--navy));color:var(--white);border-radius:20px;padding:40px;margin:44px 0}
@@ -181,7 +187,7 @@ nav.desktop a:hover,nav.desktop a[aria-current="page"]{color:var(--sky)}
 .step-item p{font-size:.92rem;color:var(--muted);margin-bottom:0}
 
 /* CTA banner */
-.cta-banner{background:linear-gradient(135deg,var(--navy),var(--deep-teal));color:var(--white);text-align:center;padding:70px 0}
+.cta-banner{position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(11,61,92,.94),rgba(8,48,72,.94)),url('/images/hero/ocean-wave-aerial.jpg');background-size:cover;background-position:center;color:var(--white);text-align:center;padding:70px 0}
 .cta-banner h2,.cta-banner h3{color:var(--white);font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:12px}
 .cta-banner p{color:rgba(255,255,255,.78);margin-bottom:24px}
 .cta-phone{font-family:'Outfit',sans-serif;font-size:2.1rem;font-weight:800;color:var(--coral);display:block;margin-bottom:22px}
