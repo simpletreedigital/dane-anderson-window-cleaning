@@ -1,0 +1,109 @@
+import sys
+sys.path.insert(0, "/Volumes/samsung/_WEB/ClaudeCode/clients/dane-anderson-window-cleaning/site/scripts")
+from common import *
+
+slug = "commercial-window-cleaning"
+title = "Commercial Window Cleaning Monterey Bay | Dane Anderson Window Cleaning"
+desc = "Commercial window cleaning for storefronts, offices, and multi-tenant buildings from Santa Cruz to Monterey. Recurring schedules available. Call (831) 224-3387."
+
+faqs = [
+    ("Do you offer recurring commercial contracts?", "Yes, most commercial accounts run on a weekly, biweekly, or monthly recurring schedule so glass stays presentable without the business needing to call each time. We can also handle one-time cleanings for events or before a grand opening."),
+    ("Can you clean storefront windows before business hours?", "Yes, early morning appointments are common for retail and restaurant accounts along village shopping streets so cleaning is finished before customers arrive."),
+    ("Do you carry commercial liability insurance?", "Yes, the business carries insurance appropriate for commercial property work, which most property managers and landlords require before authorizing vendor access."),
+    ("Can you clean interior office glass and partition walls?", "Yes, interior glass partitions, conference room walls, and lobby glass are common requests for office accounts, particularly where fingerprints and smudges are visible to clients."),
+    ("What size buildings do you service?", "We service single storefronts up through multi-tenant buildings and small office complexes. Very tall high-rise work requiring rope access is outside our scope, but the vast majority of commercial buildings along this coastline fall within reach of our pole and ladder systems."),
+    ("How do you bill commercial accounts?", "Recurring accounts are typically invoiced monthly regardless of visit frequency, which most property managers find easier than per-visit billing. One-time jobs are quoted and paid at time of service."),
+]
+
+body = f'''
+<section class="page-hero">
+  <div class="hero-bg"><img src="/images/services/commercial-window-cleaning-storefront.jpg" alt="" role="presentation"><div class="hero-scrim" style="background:linear-gradient(105deg,rgba(11,61,92,.93) 50%,rgba(11,61,92,.6) 100%)"></div></div>
+  <div class="wrap hero-content">
+    {breadcrumb([("Home","/"),("Services","/services/"),("Commercial Window Cleaning",None)])}
+    <h1>Commercial Window Cleaning in Monterey Bay</h1>
+    <p class="lede">Storefronts, offices, and multi-tenant buildings from Santa Cruz to Monterey rely on Dane Anderson Window Cleaning for recurring glass maintenance that keeps their business looking sharp.</p>
+    <a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call {PHONE_DISPLAY}</a>
+  </div>
+</section>
+<section style="background:var(--white)">
+<div class="wrap">
+<div class="content-grid">
+<div class="prose">
+<h2>Commercial Glass Maintenance Built for Coastal Storefronts</h2>
+<p>First impressions matter more for a business than a home, and nothing undercuts a storefront's presentation like salt-hazed glass or fingerprint smudges on the entry door. Dane Anderson Window Cleaning works with retail shops, restaurants, offices, and property management companies across the coastal corridor to keep commercial glass looking sharp on a schedule that fits the business, not the other way around.</p>
+<p>Unlike a residential visit, commercial work is almost always about consistency over time rather than a single deep clean. A restaurant on a village shopping street needs its front windows spotless every week regardless of weather, while a professional office building might only need a biweekly or monthly visit to interior lobby glass and exterior windows. We build the schedule around your foot traffic and business hours, not a one-size-fits-all route.</p>
+<h3>Why Storefront Glass Needs More Frequent Attention Near the Coast</h3>
+<p>Retail corridors close to the water, including the shopping streets of downtown Monterey and the village core of Carmel-by-the-Sea, take on salt spray and dust at a faster rate than an office park set back from the shoreline. Add in fingerprints, delivery truck exhaust residue, and normal foot traffic grime, and a storefront can look tired again within days of a cleaning. A recurring schedule prevents that buildup from ever becoming visible to customers walking by.</p>
+<h3>What Commercial Window Cleaning Costs</h3>
+<p>Commercial pricing is based on square footage of glass, number of stories, access difficulty, and visit frequency. A single storefront on a weekly plan typically costs less per visit than an infrequent one-off cleaning, since our crews are already routed through the area regularly. Multi-tenant buildings and property management accounts receive a custom quote based on the full glass inventory across the property. We are happy to walk a property with an owner or manager before quoting larger accounts.</p>
+<h3>Our Process for Commercial Accounts</h3>
+<div class="steps-list">
+<div class="step-item"><div class="step-num">1</div><div><h4>Property walkthrough or phone consult</h4><p>For larger accounts we walk the property; for single storefronts a phone description is usually enough to quote accurately.</p></div></div>
+<div class="step-item"><div class="step-num">2</div><div><h4>Custom schedule</h4><p>We set a visit frequency and time window that works around your business hours, often before opening or after close.</p></div></div>
+<div class="step-item"><div class="step-num">3</div><div><h4>Exterior glass cleaning</h4><p>Storefront windows, entry doors, and upper-story glass cleaned with purified water-fed systems.</p></div></div>
+<div class="step-item"><div class="step-num">4</div><div><h4>Interior glass on request</h4><p>Lobby glass, partition walls, and conference room windows cleaned as part of office accounts.</p></div></div>
+<div class="step-item"><div class="step-num">5</div><div><h4>Monthly invoicing</h4><p>Recurring accounts are billed monthly for simplicity, regardless of how many visits occurred that month.</p></div></div>
+</div>
+<h3>Detailed Services List</h3>
+<ul>
+<li><strong>Storefront glass cleaning:</strong> exterior window and entry door cleaning on a recurring schedule for retail and restaurant accounts.</li>
+<li><strong>Office building exteriors:</strong> full exterior glass cleaning for professional office buildings and small commercial complexes.</li>
+<li><strong>Interior lobby and partition glass:</strong> smudge and fingerprint removal on interior glass walls and lobby entry doors.</li>
+<li><strong>Multi-tenant property accounts:</strong> coordinated scheduling across an entire property for landlords and property managers.</li>
+<li><strong>Pre-event and one-time cleanings:</strong> single visits ahead of a grand opening, open house, or special event.</li>
+<li><strong>Hard water and salt film treatment:</strong> add-on mineral deposit removal for storefronts closest to the water.</li>
+</ul>
+<h3>Local Business Districts We Serve</h3>
+<p>We regularly service the retail corridor along Pacific Avenue in downtown Santa Cruz, the shopping streets of Capitola Village, and the storefronts along Cannery Row and Alvarado Street in Monterey. Carmel-by-the-Sea's compact village core, where nearly every shop front sits close to pedestrian traffic, is one of our most frequent recurring routes, since glass presentation there directly affects walk-in business. Office parks further inland near Watsonville and Aptos typically run on a lighter biweekly or monthly schedule since they see less salt exposure and foot traffic than the coastal shopping districts.</p>
+{case_study(
+  "Restaurant on Cannery Row Cuts Complaints About Hazy Front Windows",
+  "A restaurant along Cannery Row in Monterey had been relying on staff to wipe down the front windows between shifts, but salt spray off the bay left a persistent haze that staff cleaning could not fully remove. Management had received a handful of comments from customers about the smudged glass being visible from the sidewalk seating.",
+  "We set up a weekly early-morning cleaning before the restaurant opened, using a purified water-fed system for the tall storefront glass and a manual squeegee pass on the entry doors, with a monthly hard water treatment added to prevent mineral buildup from returning.",
+  "Within the first month, the restaurant's manager reported zero further customer comments about the windows, and the recurring account has continued for over a year at the original weekly frequency."
+)}
+<h3>Working With Property Managers</h3>
+<p>Multi-tenant buildings and shopping centers usually have one property manager coordinating vendors across several tenants, which is different from a single storefront calling directly. For these accounts we provide a single point of contact, a consistent visit day each cycle, and one consolidated monthly invoice covering every unit on the property rather than separate bills per tenant. That structure tends to save property managers time compared to juggling multiple vendors or fielding individual tenant complaints about glass appearance.</p>
+<p>We also flag maintenance issues we notice while on site, such as a failing window seal letting moisture in between panes, a screen coming loose from its frame, or gutters overflowing onto a walkway below. None of that is billed automatically. We simply mention it to the property manager so it can be addressed before it becomes a larger repair, which property managers along this coastline have told us is one of the more useful parts of working with a local vendor who is actually on site regularly rather than a national franchise crew that rotates through once and does not return.</p>
+<h3>Seasonal Considerations for Commercial Accounts</h3>
+<p>Winter storm season brings the heaviest salt spray and wind-driven rain to storefronts directly facing the bay, which is when recurring accounts see the most value from their scheduled visits, since a single missed cleaning cycle during a stormy stretch can leave visible salt film for days. Summer brings a different challenge in the form of dust and pollen carried on drier onshore winds, along with heavier foot traffic and more fingerprints on entry doors during tourist season in villages like Carmel-by-the-Sea and Capitola. We adjust visit frequency seasonally for accounts that want it, rather than locking every property into the same year-round schedule regardless of conditions.</p>
+<p>Restaurants deserve a specific mention since outdoor and window seating has become standard along the coast, and diners seated near the glass notice smudges and salt haze more than almost any other customer segment. A weekly or twice-weekly cleaning cycle for a restaurant's front-facing glass is a small cost relative to the seating revenue tied to that view, which is part of why so many of our recurring commercial accounts along the Monterey and Santa Cruz waterfronts are food and beverage businesses rather than back-office spaces.</p>
+<p>Businesses considering a recurring vendor relationship can review general guidance on commercial property upkeep from the <a href="https://www.osha.gov/etools/electric-power/illustrated-glossary/ladders" target="_blank" rel="noopener">Occupational Safety and Health Administration</a> on ladder and access safety standards, along with local business resources through the <a href="https://www.montereychamber.com" target="_blank" rel="noopener">Monterey Peninsula Chamber of Commerce</a> and the <a href="https://www.carmelchamber.org" target="_blank" rel="noopener">Carmel Chamber of Commerce</a> for storefronts in those districts.</p>
+<h3>Setting Up a New Commercial Account</h3>
+<p>Getting a new commercial account started is straightforward. For a single storefront, a phone call describing the glass count and preferred visit frequency is usually enough to provide an accurate quote and get a first cleaning scheduled within the week. For larger properties or multi-tenant buildings, we walk the property with the owner or manager to assess total glass square footage, access points, and any problem areas before quoting, since these accounts benefit from a more detailed look before pricing is finalized.</p>
+<p>Once an account is active, adjusting the schedule is simple. Businesses that find their initial frequency too infrequent, or more than they need, can request a change at any time without penalty, and we will recalibrate the following billing cycle accordingly. This flexibility matters most for seasonal businesses, such as restaurants with significant outdoor seating that only need weekly service during the warmer months and can step down to biweekly through the quieter winter season.</p>
+<h3>Payment and Contract Terms</h3>
+<p>We keep commercial terms simple. Recurring accounts are billed monthly with no long-term contract lock-in required, so a business can adjust or cancel service with reasonable notice rather than being tied to a multi-year agreement. One-time and event cleanings are invoiced at time of service. This straightforward approach has generally worked better for both sides than the longer contract terms some larger janitorial companies require, particularly for small business owners who want flexibility as their own circumstances change.</p>
+<h3>Why Businesses Choose Dane Anderson Window Cleaning</h3>
+<ul>
+<li>Fully insured for commercial property access.</li>
+<li>Flexible scheduling around business hours, including early morning and after-close visits.</li>
+<li>Simple monthly invoicing for recurring accounts.</li>
+<li>Local knowledge of which storefronts need weekly attention versus monthly.</li>
+<li>Add-on hard water and screen services available for the same property.</li>
+</ul>
+{faq_block(faqs)}
+</div>
+<div class="sidebar">
+<div class="cta-card"><h3>Set Up a Recurring Schedule</h3><p>Call now to discuss your property.</p><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; {PHONE_DISPLAY}</a></div>
+<div class="sidebar-card"><h3>Related Services</h3><ul><li><a href="/services/hard-water-stain-removal/">Hard Water Stain Removal</a></li><li><a href="/services/gutter-cleaning/">Gutter Cleaning</a></li><li><a href="/services/screen-cleaning-repair/">Screen Cleaning &amp; Repair</a></li></ul></div>
+<div class="sidebar-card"><h3>Service Areas</h3><ul><li><a href="/locations/monterey/">Monterey</a></li><li><a href="/locations/carmel-by-the-sea/">Carmel-by-the-Sea</a></li><li><a href="/locations/santa-cruz/">Santa Cruz</a></li><li><a href="/locations/">All Areas &rarr;</a></li></ul></div>
+</div>
+</div>
+</div>
+</section>
+<section style="background:var(--sand-deep)">
+<div class="wrap" style="max-width:860px"><p style="line-height:1.85">Property managers and business owners across <a href="/locations/monterey/">Monterey</a> and <a href="/locations/carmel-by-the-sea/">Carmel-by-the-Sea</a> trust Dane Anderson Window Cleaning for recurring storefront care. We also offer <a href="/services/gutter-cleaning/">gutter cleaning</a> for commercial buildings and <a href="/services/hard-water-stain-removal/">hard water stain removal</a> for glass closest to the bay. Homeowners can view our separate <a href="/services/residential-window-cleaning/">residential window cleaning</a> page.</p></div>
+</section>
+<section class="cta-banner">
+<div class="wrap"><h2>Keep Your Storefront Looking Sharp</h2><p>Call now to set up a recurring commercial schedule.</p><a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a><a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a></div>
+</section>
+'''
+
+schema = [
+    LOCAL_BUSINESS_BASE,
+    {"@type": "Service", "serviceType": "Commercial Window Cleaning", "provider": {"@id": DOMAIN + "/#business"}, "areaServed": "Santa Cruz to Monterey, CA", "name": "Commercial Window Cleaning"},
+    {"@type": "BreadcrumbList", "itemListElement": breadcrumb_schema([("Home","/"),("Services","/services/"),("Commercial Window Cleaning", f"/services/{slug}/")])},
+    faq_schema(faqs),
+]
+html = page_shell(title, desc, f"/services/{slug}/", schema, body, show_call_bar=True)
+write_page(f"services/{slug}/index.html", html)

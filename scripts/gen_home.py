@@ -1,0 +1,139 @@
+import sys, json
+sys.path.insert(0, "/Volumes/samsung/_WEB/ClaudeCode/clients/dane-anderson-window-cleaning/site/scripts")
+from common import *
+
+title = "Window Cleaning Santa Cruz to Monterey | Dane Anderson Window Cleaning"
+desc = "Professional window cleaning in Santa Cruz, Capitola, Monterey and the coastal corridor. Residential & commercial. Fully insured. Call (831) 224-3387."
+
+faqs = [
+    ("How much does window cleaning cost in Santa Cruz?", "Pricing depends on the number of panes, window style, and whether the home has hard water spotting from salt air, but most residential jobs along the coastal corridor fall in a straightforward per-pane or flat-rate range. Call (831) 224-3387 and describe your home for a fast, no-pressure quote."),
+    ("Do you clean windows on multi-story homes near the coast?", "Yes. Many properties from Pleasure Point to Pacific Grove sit on bluffs or hillsides with second and third story glass. We carry the equipment and training to reach upper-story windows safely without relying on a resident's ladder."),
+    ("How often should coastal homes get their windows cleaned?", "Because salt spray and marine layer moisture accelerate mineral buildup, most homes within a mile or two of the water benefit from cleaning every 60 to 90 days, while inland properties in Watsonville or the Pajaro Valley can often stretch to twice a year."),
+    ("Do you offer commercial window cleaning contracts?", "Yes, we work with storefronts, restaurants, and office buildings on recurring weekly, biweekly, or monthly schedules so glass always looks presentable during business hours."),
+    ("Is Dane Anderson Window Cleaning insured?", "Yes, the business is fully insured for both residential and commercial work, which matters when crews are working on ladders or accessing upper-story glass on your property."),
+    ("What areas do you serve?", "We serve the full Santa Cruz to Monterey coastal corridor, including Santa Cruz, Capitola, Aptos, Watsonville, Monterey, Pacific Grove, and Carmel-by-the-Sea."),
+]
+
+body = f'''
+<section class="page-hero">
+  <div class="hero-bg"><img src="/images/hero/homepage-hero-coastal-home.jpg" alt="" role="presentation"><div class="hero-scrim" style="background:linear-gradient(105deg,rgba(11,61,92,.93) 45%,rgba(11,61,92,.55) 100%)"></div></div>
+  <div class="wrap hero-content">
+    <h1>Crystal-Clear Views for Coastal California Homes and Businesses</h1>
+    <p class="lede">Dane Anderson Window Cleaning provides professional residential and commercial window cleaning from Santa Cruz to Monterey. Fully insured, locally owned, and built for the salt air and hard water spotting that coastal glass takes on here.</p>
+    <div class="hero-ctas">
+      <a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call {PHONE_DISPLAY}</a>
+      <a href="/services/" class="btn btn-ghost">View Our Services</a>
+    </div>
+    <div class="trust-row">
+      <span>&#9989; Fully insured</span>
+      <span>&#127968; Residential &amp; commercial</span>
+      <span>&#127754; Santa Cruz to Monterey</span>
+    </div>
+  </div>
+</section>
+
+<section class="wash-section on-white">
+  <div class="wash-bg"><img src="/images/hero/ocean-wave-texture.jpg" alt="" role="presentation"><div class="wash-fill"></div></div>
+  <div class="wrap wash-inner">
+    <span class="section-label">Why Homeowners Call Us</span>
+    <h2 class="section-title">Coastal Glass Takes a Beating. We Know How to Fix It.</h2>
+    <p class="section-sub">Salt spray, marine layer humidity, and hard water sprinklers leave a film on glass that ordinary cleaning does not remove. We use a squeegee-and-purified-water process built specifically for this stretch of coastline, not a generic spray-and-wipe routine.</p>
+    <div class="content-grid" style="grid-template-columns:1fr 1fr;gap:30px">
+      <div>
+        <h3 style="margin-bottom:8px">For Homeowners</h3>
+        <p style="color:var(--muted);font-size:.95rem">Interior and exterior glass, tracks, sills, and screens for single-story homes up through multi-story bluff-top properties.</p>
+        <a href="/services/residential-window-cleaning/" class="card-link">Learn more &rarr;</a>
+      </div>
+      <div>
+        <h3 style="margin-bottom:8px">For Businesses</h3>
+        <p style="color:var(--muted);font-size:.95rem">Storefronts, offices, and multi-tenant buildings on recurring schedules that keep glass presentable year-round.</p>
+        <a href="/services/commercial-window-cleaning/" class="card-link">Learn more &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--white)">
+  <div class="wrap">
+    <span class="section-label">Our Services</span>
+    <h2 class="section-title">Everything Your Glass and Gutters Need</h2>
+    <p class="section-sub">Five focused services covering the full exterior maintenance picture for coastal homes and businesses.</p>
+    <div class="card-grid">
+      <div class="svc-card"><div class="svc-icon">&#129517;</div><h3>Residential Window Cleaning</h3><p>Interior and exterior glass cleaning for homes across the coastal corridor.</p><a href="/services/residential-window-cleaning/" class="card-link">Learn more &rarr;</a></div>
+      <div class="svc-card"><div class="svc-icon">&#127970;</div><h3>Commercial Window Cleaning</h3><p>Storefront and office glass on a schedule that fits your business hours.</p><a href="/services/commercial-window-cleaning/" class="card-link">Learn more &rarr;</a></div>
+      <div class="svc-card"><div class="svc-icon">&#128737;</div><h3>Screen Cleaning &amp; Repair</h3><p>Screen washing, re-screening, and frame repair for salt-corroded mesh.</p><a href="/services/screen-cleaning-repair/" class="card-link">Learn more &rarr;</a></div>
+      <div class="svc-card"><div class="svc-icon">&#128167;</div><h3>Hard Water Stain Removal</h3><p>Mineral deposit and sprinkler overspray removal that restores clarity.</p><a href="/services/hard-water-stain-removal/" class="card-link">Learn more &rarr;</a></div>
+      <div class="svc-card"><div class="svc-icon">&#127960;</div><h3>Gutter Cleaning</h3><p>Debris removal and downspout flushing before the rainy season arrives.</p><a href="/services/gutter-cleaning/" class="card-link">Learn more &rarr;</a></div>
+    </div>
+  </div>
+</section>
+
+{case_study(
+  "Bluff-Top Home in Capitola Recovers Its Ocean View",
+  "A homeowner near Depot Hill in Capitola had gone nearly two years without a professional cleaning. Salt spray had etched a hazy film across the ocean-facing panes, and the family had started to assume the fog was simply age in the glass itself.",
+  "Our crew used a purified-water fed-pole system for the upper story sections above the bluff, combined with a manual squeegee pass on the ground-floor slider doors, and treated the worst-affected panes with a mineral deposit solution before the final rinse.",
+  "The full job took just under three hours. The homeowner said the ocean view from the living room looked better than it had since they bought the house, and they signed up for a quarterly maintenance visit afterward."
+)}
+
+<section class="wash-section on-white">
+  <div class="wash-bg"><img src="/images/hero/ocean-wave-aerial.jpg" alt="" role="presentation"><div class="wash-fill"></div></div>
+  <div class="wrap wash-inner">
+    <span class="section-label">Service Areas</span>
+    <h2 class="section-title">Serving the Santa Cruz to Monterey Coastal Corridor</h2>
+    <p class="section-sub">We are based in Santa Cruz and drive the coastline daily, from Pleasure Point down through the Monterey Peninsula.</p>
+    <div class="card-grid">
+      <a href="/locations/santa-cruz/" class="loc-card"><h3>Santa Cruz</h3><p>Home base &amp; primary service area</p></a>
+      <a href="/locations/capitola/" class="loc-card"><h3>Capitola</h3><p>Village &amp; bluff-top homes</p></a>
+      <a href="/locations/aptos/" class="loc-card"><h3>Aptos</h3><p>Seacliff &amp; Rio Del Mar</p></a>
+      <a href="/locations/watsonville/" class="loc-card"><h3>Watsonville</h3><p>Pajaro Valley</p></a>
+      <a href="/locations/monterey/" class="loc-card"><h3>Monterey</h3><p>Cannery Row &amp; downtown</p></a>
+      <a href="/locations/pacific-grove/" class="loc-card"><h3>Pacific Grove</h3><p>Lovers Point &amp; Asilomar</p></a>
+      <a href="/locations/carmel-by-the-sea/" class="loc-card"><h3>Carmel-by-the-Sea</h3><p>Village &amp; carmel beach</p></a>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--white)">
+  <div class="wrap" style="max-width:900px">
+    <span class="section-label">Local Difference</span>
+    <h2 class="section-title">Why Coastal Window Cleaning Is Different</h2>
+    <div class="prose">
+      <p>Homes and storefronts along Monterey Bay deal with a specific combination of conditions that inland California properties simply do not face. Salt-laden fog rolls in most mornings, sprinkler overspray mixes with the local hard water supply, and the marine layer keeps glass surfaces damp longer than they would stay in a drier climate. Left alone, that combination bakes a mineral film into the glass that becomes progressively harder to remove.</p>
+      <p>Dane Anderson Window Cleaning built its process around this reality rather than importing a generic residential cleaning routine. Every job includes a check for hard water etching, not just surface dust and pollen, and our crews carry the deionized water systems and mineral-safe solutions that the standard vinegar-and-newspaper approach cannot match. <a href="/services/hard-water-stain-removal/">Hard water stain removal</a> is one of our most requested add-ons for exactly this reason.</p>
+      <p>We also account for the coastal wind when scheduling. Storefronts along <a href="/locations/monterey/">Cannery Row in Monterey</a> or <a href="/locations/carmel-by-the-sea/">the village shops in Carmel-by-the-Sea</a> get dusted with salt spray on windy afternoons, so commercial accounts on our recurring schedule are often serviced early in the day before foot traffic peaks. Homeowners further inland in <a href="/locations/watsonville/">Watsonville</a> deal with agricultural dust more than salt film, so we adjust our approach and cleaning frequency recommendation accordingly rather than applying one blanket routine to every property on the route.</p>
+      <p>The <a href="https://www.epa.gov/watersense/hard-water" target="_blank" rel="noopener">EPA's WaterSense program</a> notes that mineral-rich water is a widespread issue across much of California, and coastal properties compound that with airborne salt. Understanding both factors is part of what separates a thorough exterior glass service from a quick wipe-down. The <a href="https://www.weather.gov/mtr/" target="_blank" rel="noopener">National Weather Service's Monterey forecast office</a> tracks the marine layer patterns that drive much of this buildup, and the <a href="https://www.santacruzchamber.org" target="_blank" rel="noopener">Santa Cruz Chamber of Commerce</a> lists local business resources for property owners along this same corridor.</p>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--sand-deep)">
+  <div class="wrap">
+    <span class="section-label">Reach Us</span>
+    <h2 class="section-title">Ready for Clearer Glass?</h2>
+    <p class="section-sub">Call now and describe your property. We will give you a straightforward quote over the phone, no in-person estimate required for most residential jobs.</p>
+    <div class="hero-ctas">
+      <a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call {PHONE_DISPLAY}</a>
+      <a href="/blog/" class="btn btn-outline">Read Our Blog</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="wrap">
+    <h2>Serving Santa Cruz, Monterey, and Everywhere Between</h2>
+    <p>Residential and commercial window cleaning, screen repair, hard water removal, and gutter cleaning.</p>
+    <a href="tel:{PHONE_TEL}" class="cta-phone">{PHONE_DISPLAY}</a>
+    <a href="tel:{PHONE_TEL}" class="btn btn-cta">&#128222; Call Now</a>
+  </div>
+</section>
+'''
+
+schema = [
+    {**LOCAL_BUSINESS_BASE},
+    faq_schema(faqs),
+]
+
+extra_head = f'<script type="application/ld+json">{json.dumps(faq_schema(faqs), separators=(",",":"))}</script>'
+
+html = page_shell(title, desc, "/", [LOCAL_BUSINESS_BASE], body + faq_block(faqs), extra_head=extra_head)
+write_page("index.html", html)
